@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road to a Million - Track Your Beers</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 4rem 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="beer-fill" id="beerFill">
+        <div class="foam-layer"></div>
+    </div>
+
+    <header>
+        <a onclick="showPage('home')">
+            <div class="logo">ROAD TO A MILLION</div>
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('features')">Features</a></li>
+            <li><a onclick="showPage('about')">About</a></li>
+            <li><a onclick="showPage('download')">Download</a></li>
+            <li><a onclick="showPage('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- HOME + FEATURES + ABOUT Combined -->
+        <div id="home" class="page active">
+            <!-- HOME SECTION -->
+            <section id="top">
+                <h2>Welcome to the Road to a Million</h2>
+                <p>Join us on our journey to track a million beers.
+                    Whether you're a casual drinker or a social consumer, every beer counts (including non-alcoholic!).
+                    Road to a Million allows social tracking, on your own, in a group or as an app as a whole, all with
+                    varying levels of statistics. We love statistics!!</p>
+
+                <div class="stats-box">
+                    <div class="stats-number">542</div>
+                    <div>Beers Drunk</div>
+                </div>
+
+            </section>
+
+            <!-- FEATURES SECTION -->
+            <section id="features">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🍺</div>
+                        <h3>Track Your Beers</h3>
+                        <p>Log every beer you drink and track your consumption</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Groups</h3>
+                        <p>Create or join groups with friends and track together your beer tastes, habits and journey.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Statistics & Insights</h3>
+                        <p>View your drinking data, favorite beers, and group activity</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about">
+                <h2>About Road To A Million Beers</h2>
+
+                <p>Road To A Million Beers started as a WhatsApp group chat and has now evolved into this, a beer
+                    tracking app designed for social beer tracking providing fun facts about you and your friends drinking.</p>
+
+                <h3>How It Works</h3>
+                <p>Getting started is simple:</p>
+                <ul>
+                    <li>Create an account or sign in as a guest</li>
+                    <li>Start logging beers as you enjoy them</li>
+                    <li>Join or create a group with friends</li>
+                    <li>Watch as your group tracks it's beer journey</li>
+                    <li>Compare and share statistics together</li>
+                </ul>
+
+                <h3>Responsible Drinking</h3>
+                <p>We believe in celebrating beer culture responsibly. Road to a Million is designed to track and share
+                    your experiences, not to encourage excessive consumption. Please always drink responsibly and never
+                    drink and drive.</p>
+            </section>
+
+            <section id="download">
+                <h2>Download the App</h2>
+
+                <p>Get started on your road to a million! Download the app on your device:</p>
+
+                <div class="download-buttons">
+                    <a href="https://play.google.com/" target="_blank" class="store-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/330px-Google_Play_Store_badge_EN.svg.png"
+                            alt="Google Play">
+                    </a>
+                    <a href="https://apps.apple.com/" target="_blank" class="store-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/330px-Download_on_the_App_Store_Badge.svg.png"
+                            alt="Apple Store">
+                    </a>
+                </div>
+
+                <p>Once installed, open the app and start tracking your beers!</p>
+            </section>
+
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+
+                <p>We'd love to hear from you! Whether you have questions, feedback, or need support, please reach
+                    out:
+                </p>
+
+                <div class="delete-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mwpwkzno" method="POST">
+                        <div class="form-group">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="contact-email" required
+                                placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                placeholder="Your message here..."></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1.5rem; background: var(--card-white); border-radius: 12px;">
+                    <h3>Other Ways to Reach Us</h3>
+                    <p><strong>Email:</strong> <a href="mailto:tc.chalice@gmail.com"
+                            class="email-link">tc.chalice@gmail.com</a></p>
+                    <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Road to a Million. All rights reserved.</p>
+        <p>Drink responsibly. Must be 18+ or legal drinking age in your country. Never drink and drive</p>
+        <p style="margin-top: 1rem;">
+            <a href="/privacy.html" target="_blank" style="color: var(--beer-light); text-decoration: none;">
+                Privacy Policy
+            </a>
+            |
+            <a href="/TOS.html" target="_blank" style="color: var(--beer-light); text-decoration: none;">
+                Terms Of Service
+            </a>
+            |
+            <a href="/deleteAccount.html" target="_blank" style="color: var(--beer-light); text-decoration: none;">
+                Delete Account
+            </a>
+        </p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
