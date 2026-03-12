@@ -79,3 +79,8 @@ setInterval(() => {
         createBubble();
     }
 }, 500);
+
+function showComingSoon(event) {
+    event.preventDefault();
+    alert("App coming soon! Check back here for download links.");
+}
