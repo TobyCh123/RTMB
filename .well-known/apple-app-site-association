@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "LYM8NTPZA4.com.cchalice.RTMB",
+        "paths": [ "/plusOne/*" ]
+      }
+    ]
+  }
+}
