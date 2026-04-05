@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
     <meta name="author" content="Toby Challis">
-    <meta name="description"
-        content="You've been invited to join a group on RTMB - the social drink tracking app.">
+    <meta name="description" content="You've been invited to join a group on RTMB - the social drink tracking app.">
     <link
         href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -139,6 +138,14 @@
             opacity: 0.75;
             margin: 0;
         }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -159,12 +166,14 @@
         </ul>
     </nav>
 
+
     <!-- INVITE HERO -->
     <div class="invite-hero">
 
         <h2>You've been invited!</h2>
         <p>A friend has invited you to join their group on <strong>RTMB</strong> — the social drink
-            tracking app. Download the app, create an account, and use the invite link again to join automatically.</p>
+            tracking app. Download the app, create an account, and use the invite link again to join automatically.
+        </p>
     </div>
 
     <!-- INVITE CARD -->
@@ -186,46 +195,48 @@
     </div>
 
     <!-- HOW IT WORKS -->
-    <section>
-        <div class="steps">
-            <h3>How to join your group</h3>
-            <ol>
-                <li>Download RTMB from the App Store or Google Play</li>
-                <li>Create an account or sign in</li>
-                <li>Tap your original invite link again — you'll join the group automatically</li>
-                <li>Start tracking drinks with your friends</li>
-            </ol>
-        </div>
-    </section>
 
-    <!-- MINI FEATURES -->
-    <section>
-        <h3 style="text-align:center; margin-bottom: 0.5rem;">What is RTMB?</h3>
-        <p style="text-align:center; opacity:0.75; max-width:540px; margin: 0 auto 1rem; font-size:0.95rem;">
-            A social drink tracking app — log drinks, join groups, and see stats with friends on your road to a million.
-        </p>
-        <div class="features-mini">
-            <div class="feature-mini-card">
-                <div class="icon">🍺</div>
-                <strong>Track Drinks</strong>
-                <p>Log every drink, including non-alcoholic</p>
+    <div class="container">
+        <section>
+            <div class="steps">
+                <h3>How to join your group</h3>
+                <ol>
+                    <li>Download RTMB from the App Store or Google Play</li>
+                    <li>Create an account or sign in</li>
+                    <li>Tap your original invite link again — you'll join the group automatically</li>
+                    <li>Start tracking drinks with your friends</li>
+                </ol>
             </div>
-            <div class="feature-mini-card">
-                <div class="icon">👥</div>
-                <strong>Groups</strong>
-                <p>Track and compare with friends</p>
-            </div>
-            <div class="feature-mini-card">
-                <div class="icon">📊</div>
-                <strong>Statistics</strong>
-                <p>Insights into your drinking habits</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- MINI FEATURES -->
+        <section>
+            <h3 style="text-align:center; margin-bottom: 0.5rem;">What is RTMB?</h3>
+            <p style="text-align:center; opacity:0.75; max-width:540px; margin: 0 auto 1rem; font-size:0.95rem;">
+                A social drink tracking app — log drinks, join groups, and see stats with friends.
+            </p>
+            <div class="features-mini">
+                <div class="feature-mini-card">
+                    <div class="icon">🥤</div>
+                    <strong>Track Drinks</strong>
+                    <p>Log every drink,</p>
+                </div>
+                <div class="feature-mini-card">
+                    <div class="icon">👥</div>
+                    <strong>Groups</strong>
+                    <p>Track and compare with friends</p>
+                </div>
+                <div class="feature-mini-card">
+                    <div class="icon">📊</div>
+                    <strong>Statistics</strong>
+                    <p>Insights into your drinking habits</p>
+                </div>
+            </div>
+        </section>
+    </div>
     <footer>
-        <p>&copy; 2026 Road to a Million. All rights reserved.</p>
-        <p>Road to a Million is an independent project created by Toby Challis, UK.</p>
+        <p>&copy; 2026 RTMB. All rights reserved.</p>
+        <p>RTMB is an independent project created by Toby Challis, UK.</p>
         <p>Drink responsibly. Must be 18+ or legal drinking age in your country. Never drink and drive.</p>
         <p style="margin-top: 1rem;">
             <a href="privacy.html" target="_blank" style="color: var(--beer-light); text-decoration: none;">Privacy
