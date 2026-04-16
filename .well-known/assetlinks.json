@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.cchalice.rtmb",
+      "package_name": "com.cchalice.RTMB-app",
       "sha256_cert_fingerprints": [
         "06:F1:5C:60:F3:ED:58:AF:4A:CF:8A:10:15:55:54:A9:77:24:81:07:94:1C:FC:14:E0:B4:97:22:5B:30:FB:9B"
       ]
