@@ -49,6 +49,8 @@
     <div class="container">
         <!-- HOME + FEATURES + ABOUT Combined -->
         <div id="home" class="page active">
+
+
             <!-- HOME SECTION -->
             <section id="top">
                 <h2>Welcome to RTMB</h2>
@@ -62,8 +64,23 @@
                     <div class="stats-number">542</div>
                     <div>Drinks Consumed</div>
                 </div>
-
             </section>
+
+            <section id="waitlist" style="padding: 1rem 1rem">
+                 
+                    <h3>Enter your email to join the waitlist</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mwpwkzno" method="POST">
+                        <input type="hidden" name="subject" value="Waitlist Signup">
+                        <div class="form-group">
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="contact-email" autocomplete="email" required
+                                placeholder="your.email@example.com">
+                        </div>
+                        <button type="submit">Join Waitlist</button>
+                    </form>
+                
+            </section>
+
 
             <!-- FEATURES SECTION -->
             <section id="features">
@@ -131,21 +148,7 @@
 
                 <p>Once installed, open the app and start tracking your drinks!</p>
 
-                <h2>Waitlist</h2>
-                <p>Join our waitlist to be the first to know when RTMB is available for download!</p>
 
-                <div class="delete-form">
-                    <h3>Enter your email to join the waitlist</h3>
-                    <form id="contactForm" action="https://formspree.io/f/mwpwkzno" method="POST">
-                        <input type="hidden" name="subject" value="Waitlist Signup">
-                        <div class="form-group">
-                            <label for="contact-email">Your Email</label>
-                            <input type="email" id="contact-email" name="contact-email" autocomplete="email" required
-                                placeholder="your.email@example.com">
-                        </div>
-                        <button type="submit">Join Waitlist</button>
-                    </form>
-                </div>
             </section>
 
             <section id="contact">
