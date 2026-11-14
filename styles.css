@@ -14,6 +14,30 @@
     --card-white: #ffffff;
 }
 
+@font-face {
+    font-family: "Bree Serif";
+    src: url("Bree_Serif/BreeSerif-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway/static/Raleway-BlackItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway/static/Raleway-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
 body {
     font-family: "Bree Serif", serif;
     line-height: 1.6;
